@@ -30,6 +30,7 @@ with gr.Blocks() as demo:
         "\n\nFor more details, check out:"
         "\n- https://www.gradio.app/guides/sharing-your-app#o-auth-login-via-hugging-face"
         "\n- https://huggingface.co/docs/hub/spaces-oauth"
+        "TEST TEST TEST"
     )
     gr.LoginButton()
     # ^ add a login button to the Space
