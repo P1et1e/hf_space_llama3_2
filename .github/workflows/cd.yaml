@@ -18,11 +18,11 @@ jobs:
         env:
           HF: ${{ secrets.HF }}
           HF_USER: ${{ secrets.HF_USER }}
-          SPACE: ${{ env.SPACE }}
+          SPACE: Llama_3.2_Demo
         run: git remote add space https://$HF_USER:$HF@huggingface.co/spaces/$HF_USER/$SPACE
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
           HF_USER: ${{ secrets.HF_USER }}
-          SPACE: ${{ env.SPACE }}
+          SPACE: Llama_3.2_Demo
         run: git push --force https://$HF_USER:$HF@huggingface.co/spaces/$HF_USER/$SPACE main
